@@ -37,7 +37,7 @@ var myapp = {};
             e.preventDefault();
             console.log("sms");
 
-            StackMob.customcode('hello_world', {}, {
+            StackMob.customcode('simple', {foo:"bar"}, {
                success: function(jsonResult) {
                  //jsonResult is the JSON object: { "msg": "Hello, world!" }
                  console.log('success');
